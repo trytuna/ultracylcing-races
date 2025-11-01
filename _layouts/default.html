@@ -87,7 +87,7 @@
       <div class="container-lg">
         <div class="footer-content">
           <p class="footer-build">
-            <code>{{ site.git_hash | default: "dev" }}</code> 
+            <code>{{ site.git_hash_short | default: "dev" }}</code> 
             <span class="footer-divider">·</span> 
             {{ site.build_date | default: "now" | date: "%Y-%m-%d %H:%M" }}
           </p>
