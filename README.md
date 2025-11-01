@@ -1,5 +1,5 @@
 # To see the list of ultracycling races go here:
-## [https://trytuna.github.io/ultracylcing-races/](https://trytuna.github.io/ultracylcing-races/)
+## [https://trytuna.github.io/ultracylcing-races](https://trytuna.github.io/ultracylcing-races)
 ---
 List of ultra-distance bikepacking races for endurance cyclists interested in self-supported and unsupported racing across Europe and beyond.
 
