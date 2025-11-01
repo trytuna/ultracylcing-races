@@ -1,0 +1,18 @@
+{%- assign race = include.race -%}
+BEGIN:VEVENT
+UID:{{ race.name | url_encode }}{% if race.start %}-{{ race.start }}{% endif %}
+SUMMARY:{{ race.name }}{% if race.distance %} {{ race.distance }}{% endif %}{% if race.elevation %} {{ race.elevation }}{% endif %}{% if race.cancelled %} (Cancelled){% endif %}
+{% if race.link %}URL:{{ race.link }}{% endif %}
+LOCATION:{% if race.start-location %}{{ race.start-location }}{% else %}TBA{% endif %}
+{% if race.start %}
+{%- assign start = race.start | split: "-" -%}
+DTSTART;VALUE=DATE:{{ start[0] }}{{ start[1] }}{{ start[2] }}
+{% if race.end %}
+	{%- assign end = race.end -%}
+{%- else -%}
+	{%- assign end = race.start -%}
+{%- endif -%}
+DTEND;VALUE=DATE:{{ end | date: "%s" | plus: 129600 | date: "%Y%m%d" }}
+{% endif -%}
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%S"}}
+END:VEVENT

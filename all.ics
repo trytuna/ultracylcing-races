@@ -1,0 +1,11 @@
+---
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//trytuna/UltracyclingRaces/all v1.0//EN
+CALSCALE:GREGORIAN
+NAME:All ultracycling races
+{% for race in site.data.races %}
+{%- include event.ics race=race -%}
+{% endfor %}
+END:VCALENDAR
