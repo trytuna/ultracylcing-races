@@ -2,30 +2,47 @@
 
 .hero-banner {
   background: linear-gradient(135deg, colors.$blue-400 0%, colors.$purple-500 100%);
-  border-radius: 16px;
-  padding: 60px 40px;
+  border-radius: 0;
+  padding: 40px 20px;
   color: colors.$white;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: none;
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 0;
+  
+  @media (min-width: 1024px) {
+    border-radius: 16px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+  }
 }
 
 .hero-banner::before {
   content: "🚴";
   position: absolute;
-  font-size: 200px;
-  right: -30px;
-  top: -30px;
+  font-size: 120px;
+  right: -20px;
+  top: -20px;
   opacity: 0.1;
   transform: rotate(-15deg);
+  
+  @media (min-width: 768px) {
+    font-size: 200px;
+    right: -30px;
+    top: -30px;
+  }
 }
 
 .hero-banner h1 {
   margin: 0 0 20px 0;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 800;
   position: relative;
+  
+  @media (min-width: 768px) {
+    font-size: 3em;
+  }
 }
 
 .hero-banner h1 a {
@@ -40,10 +57,15 @@
 }
 
 .hero-banner p {
-  font-size: 1.2em;
-  margin: 30px 0 15px 0;
+  font-size: 1em;
+  margin: 20px 0 15px 0;
   opacity: 0.95;
   position: relative;
+  
+  @media (min-width: 768px) {
+    font-size: 1.2em;
+    margin: 30px 0 15px 0;
+  }
 }
 
 .hero-banner ul {
@@ -61,12 +83,16 @@
   display: block;
   background: colors.$white;
   color: colors.$blue-500;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  @media (min-width: 768px) {
+    padding: 12px 24px;
+  }
 }
 
 .hero-banner a.download-link:hover {
@@ -77,13 +103,18 @@
 .url-copy-box {
   background: colors.$white;
   border-radius: 8px;
-  padding: 12px 15px;
+  padding: 10px 12px;
   margin-top: 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
+  
+  @media (min-width: 768px) {
+    padding: 12px 15px;
+    gap: 10px;
+  }
 }
 
 .url-copy-box:hover {
@@ -97,20 +128,31 @@
   border: none;
   padding: 0;
   font-family: monospace;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: colors.$gray-700;
+  min-width: 0;
+  
+  @media (min-width: 768px) {
+    font-size: 0.9em;
+  }
 }
 
 .copy-btn {
   background: colors.$blue-500;
   border: none;
   color: colors.$white;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.2s;
   white-space: nowrap;
+  font-size: 0.85em;
+  
+  @media (min-width: 768px) {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
 }
 
 .copy-btn:hover {
