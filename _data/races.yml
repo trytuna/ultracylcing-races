@@ -113,3 +113,14 @@
   support-mode: unsupported
   route: fixed
   time-limit: 112h (Adventure) / 88h (Race)
+
+- name: MittelgebirgeClassique
+  link: https://mittelgebirgeclassique.cc
+  start: "2026-05-17"
+  end: "2026-05-21"
+  distance: 1135km
+  elevation: 23660m
+  start-location: 🇩🇪 Germany, Diedesfeld
+  finish-location: 🇩🇪 Germany, Diedesfeld
+  support-mode: unsupported
+  route: fixed
