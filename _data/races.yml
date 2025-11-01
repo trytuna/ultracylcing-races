@@ -229,3 +229,14 @@
   support-mode: semi-supported
   route: fixed
   time-limit: 96h
+
+- name: VIA Race
+  link: https://via-race.com
+  start: "2026-07-24"
+  end: "2026-08-08"
+  distance: 4000km
+  elevation: 40000m
+  start-location: 🇳🇱 Netherlands, Amerongen
+  finish-location: TBA
+  support-mode: unsupported
+  route: free
