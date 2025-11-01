@@ -6,6 +6,7 @@
       <th>Distance</th>
       <th>Elevation</th>
       <th>Start location</th>
+      <th>(Un)supported / Fixed or free route</th>
     </tr>
   </thead>
   <tbody>
@@ -31,6 +32,11 @@
       <td>{{ race.distance | default: "NA" }}</td>
       <td>{{ race.elevation | default: "NA" }}</td>
       <td>{{ race.start-location | default: "TBA" }}</td>
+      <td>
+        {% if race.support-mode == 'unsupported' %}🚫{% else %}🤝{% endif %}
+        /
+        {% if race.route == 'fixed' %}📍{% else %}🗺️{% endif %}
+      </td>
     </tr>
     {% endfor %}
   </tbody>
