@@ -20,8 +20,7 @@ title: Ultracycling Races
 {% include race-table.html races=past %}
 {% endif %}
 
-### More
+### Add a race to this list
 
-**Add a race to this list:**
 - Submit via [**Google Form**](https://forms.gle/qKVg8K1NJsXCoYKM7)
 - Open a [**Pull Request**](https://github.com/trytuna/ultracylcing-races/edit/main/_data/races.yml) on GitHub
