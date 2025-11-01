@@ -39,7 +39,7 @@ jobs:
           echo "git_hash: ${GIT_HASH_LONG}" > _config_ci.yml
           echo "git_hash_short: ${GIT_HASH}" >> _config_ci.yml
           echo "build_date: ${BUILD_DATE}" >> _config_ci.yml
-          jekyll build --config _config_production.yml,_config_ci.yml
+          bundle exec jekyll build --config _config_production.yml,_config_ci.yml
         env:
           JEKYLL_ENV: production
 
