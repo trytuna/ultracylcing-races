@@ -31,7 +31,10 @@ jobs:
         run: bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --config _config_production.yml
+        run: |
+          echo "git_hash: ${{ github.sha }}" > _config_ci.yml
+          echo "git_hash_short: ${GITHUB_SHA::7}" >> _config_ci.yml
+          jekyll build --config _config_production.yml,_config_ci.yml
         env:
           JEKYLL_ENV: production
 

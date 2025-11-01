@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}">
+
+    <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: site.git_hash | relative_url }}">
   </head>
   <body>
     <div class="container-lg">
@@ -83,6 +83,10 @@
       {{ content }}
     </div>
 
+    <footer>
+      Build: {{ site.git_hash }} ({{ site.build_date }})
+    </footer>
+    
     <script>
       function toggleAccordion() {
         const content = document.getElementById('accordionContent');
@@ -109,6 +113,5 @@
         });
       }
     </script>
-
   </body>
 </html>
