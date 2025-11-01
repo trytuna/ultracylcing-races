@@ -6,8 +6,8 @@ layout: null
   <channel>
     <title>Ultracycling races</title>
     <description>Ultra-distance bikepacking races for endurance cyclists</description>
-    <link>{{ site.url | absolute_url }}</link>
-    <atom:link href="{{ site.url | absolute_url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>{{ page.url | absolute_url }}</link>
+    <atom:link href="{{ page.url | absolute_url }}feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
@@ -43,7 +43,7 @@ layout: null
           <link>{{ race.link }}</link>
           <guid isPermaLink="false">{{ race.link }}-{{ race.start }}</guid>
         {% else %}
-          <guid isPermaLink="false">{{ site.url | absolute_url }}/#{{ race.name | slugify }}-{{ race.start }}</guid>
+          <guid isPermaLink="false">{{ page.url | absolute_url }}#{{ race.name | slugify }}-{{ race.start }}</guid>
         {% endif %}
         <pubDate>{{ race.start | date_to_rfc822 }}</pubDate>
       </item>
@@ -72,7 +72,7 @@ layout: null
           <link>{{ race.link }}</link>
           <guid isPermaLink="false">{{ race.link }}-tba</guid>
         {% else %}
-          <guid isPermaLink="false">{{ site.url | absolute_url }}/#{{ race.name | slugify }}-tba</guid>
+          <guid isPermaLink="false">{{ page.url | absolute_url }}#{{ race.name | slugify }}-tba</guid>
         {% endif %}
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
       </item>
