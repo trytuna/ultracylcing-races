@@ -7,7 +7,7 @@ layout: null
     <title>Ultracycling races</title>
     <description>Ultra-distance bikepacking races for endurance cyclists</description>
     <link>{{ page.url | absolute_url }}</link>
-    <atom:link href="{{ page.url | absolute_url }}feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
