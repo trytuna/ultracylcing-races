@@ -1,0 +1,9 @@
+title: Ultracycling races
+description: >-
+  List of ultracycling races
+baseurl: "/ultracylcing-races"
+url: "https://trytuna.github.io"
+theme: null
+sass:
+  style: compressed
+  sourcemap: development

@@ -31,7 +31,7 @@ jobs:
         run: bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --baseurl "/ultracylcing-races"
+        run: bundle exec jekyll build --config _config_production.yml
         env:
           JEKYLL_ENV: production
 
