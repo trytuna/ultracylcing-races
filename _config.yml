@@ -1,7 +1,7 @@
 title: Ultracycling races
 description: >- # this means to ignore newlines until "baseurl:"
   List of ultracycling races
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ultracylcing-races"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 sass:
