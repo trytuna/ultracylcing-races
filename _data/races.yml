@@ -66,3 +66,50 @@
   start-location: 🇹🇷 Türkiye
   finish-location: 🇹🇷 Türkiye
   support-mode: unsupported
+
+- name: RACA Race across Austria - North-South
+  link: https://www.raceacrossaustria.com/raca-north-south
+  start: "2026-06-16"
+  end: "2026-06-20"
+  distance: 1000km
+  elevation: 14000m
+  start-location: 🇦🇹 Austria, Linz
+  finish-location: 🇦🇹 Austria, Linz
+  support-mode: unsupported
+  route: fixed
+  time-limit: 112h (Adventure) / 88h (Race)
+
+- name: RACA Race across Austria - East-West
+  link: https://www.raceacrossaustria.com/raca-east-west
+  start: "2026-08-25"
+  distance: 1000km
+  elevation: 16000m
+  start-location: 🇦🇹 Austria, Nickelsdorf
+  finish-location: 🇦🇹 Austria, Feldkirch
+  support-mode: unsupported
+  route: fixed
+  time-limit: 112h (Adventure) / 88h (Race)
+
+- name: RACA Race across Austria - Grevel Ultra
+  link: https://www.raceacrossaustria.com/gravel-ultra
+  start: "2026-06-18"
+  end: "2026-06-20"
+  distance: 500km
+  elevation: 8000m
+  start-location: 🇦🇹 Austria, Linz
+  finish-location: 🇦🇹 Austria, Linz
+  support-mode: unsupported
+  route: fixed
+  time-limit: 63h (Adventure) / 52h (Race)
+
+- name: RACA Race across Austria - Grevel Ultra
+  link: https://www.raceacrossaustria.com/gravel-ultra
+  start: "2026-08-25"
+  end: "2026-08-29"
+  distance: 850km
+  elevation: 16000m
+  start-location: 🇦🇹 Austria, Nickelsdorf
+  finish-location: 🇦🇹 Austria, Feldkirch
+  support-mode: unsupported
+  route: fixed
+  time-limit: 112h (Adventure) / 88h (Race)
