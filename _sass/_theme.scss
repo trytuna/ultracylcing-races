@@ -18,11 +18,18 @@ $container-lg: 1012px !default;
 
 // Base Styles
 body {
+  margin: 0;
+  padding: 0;
   font-family: $body-font;
   font-size: 16px;
   line-height: $body-line-height;
   color: colors.$gray-900;
   word-wrap: break-word;
+  
+  @media (max-width: 767px) {
+    // Negativer Margin um unter die Statusbar zu gehen
+    margin-top: calc(-1 * env(safe-area-inset-top, 0px));
+  }
 }
 
 // Container
