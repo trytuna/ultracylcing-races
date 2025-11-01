@@ -15,4 +15,54 @@
   elevation: 7400m
   support-mode: unsupported
   route: fixed
-  cancelled: true
+
+- name: The Bright Midnight
+  link: https://brightmidnight.cc/the-project/
+  start: "2026-07-05"
+  start-location: 🇳🇴 Tolga, Norway
+  finish-location: 🇳🇴 Tolga, Norway
+  distance: 1100 km
+  elevation: 20000m
+  support-mode: unsupported
+  route: fixed
+
+- name: Atlas Mountain Race
+  link: https://www.themountainraces.cc/atlas-mountain-race
+  start: "2026-02-06"
+  end: "2026-02-14"
+  start-location: 🇲🇦 Morocco, Beni-Mellal
+  finish-location: 🇲🇦 Morocco, Essaouira
+  distance: 1350km
+  elevation: 25000m
+  support-mode: unsupported
+  route: fixed
+
+- name: Silk road Mountain Race
+  link: https://www.themountainraces.cc/silk-road-mountain-race
+  start: "2026-08-14"
+  end: "2026-08-30"
+  start-location: 🇰🇬 Kyrgyzstan, Osh
+  finish-location: 🇰🇬 Kyrgyzstan, Karakol
+  distance: 1900km
+  elevation: 30000m
+  support-mode: unsupported
+  route: fixed
+
+- name: Hellenic Mountain Race
+  link: https://www.themountainraces.cc/hellenic-mountain-race
+  start: "2026-05-23"
+  end: "2026-05-30"
+  start-location: 🇬🇷 Greece, Μeteora
+  finish-location: 🇬🇷 Greece, Nafpaktos
+  distance: 900km
+  elevation: 30000m
+  support-mode: unsupported
+  route: fixed
+
+- name: Taurus Mountain Race
+  link: https://www.themountainraces.cc/taurus-mountain-race
+  start: "2026-10-16"
+  end: "2026-10-24"
+  start-location: 🇹🇷 Türkiye
+  finish-location: 🇹🇷 Türkiye
+  support-mode: unsupported
