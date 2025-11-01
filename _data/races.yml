@@ -129,7 +129,7 @@
   link: https://www.lostdot.cc/tcr
   start: "TBA"
   distance: 4000km
-  start-location: 🇪🇸 Spain, Santiago de compostela
+  start-location: 🇪🇸 Spain, Santiago de Compostela
   finish-location: 🇷🇴 Romania, Constanta
   support-mode: unsupported
   router: free
@@ -153,3 +153,13 @@
   finish-location: 🇦🇱 Albania, Shkodër
   support-mode: unsupported
   route: fixed
+
+- name: Lost Dot 101
+  link: https://www.lostdot.cc/101
+  start: "2026-05-10"
+  end: "2026-05-16"
+  distance: 1200km
+  start-location: 🇪🇸 Spain, Santiago de Compostela
+  finish-location: 🇪🇸 Spain, Córdoba
+  support-mode: unsupported
+  route: free
