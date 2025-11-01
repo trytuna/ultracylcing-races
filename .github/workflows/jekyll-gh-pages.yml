@@ -32,8 +32,13 @@ jobs:
 
       - name: Build Jekyll site
         run: |
-          echo "git_hash: ${{ github.sha }}" > _config_ci.yml
-          echo "git_hash_short: ${GITHUB_SHA::7}" >> _config_ci.yml
+          GIT_HASH=$(git rev-parse --short HEAD)
+          GIT_HASH_LONG=$(git rev-parse HEAD)
+          BUILD_DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          echo "git_hash: ${GIT_HASH_LONG}" > _config_ci.yml
+          echo "git_hash_short: ${GIT_HASH}" >> _config_ci.yml
+          echo "build_date: ${BUILD_DATE}" >> _config_ci.yml
           jekyll build --config _config_production.yml,_config_ci.yml
         env:
           JEKYLL_ENV: production
