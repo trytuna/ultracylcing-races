@@ -83,8 +83,16 @@
       {{ content }}
     </div>
 
-    <footer>
-      Build: {{ site.git_hash }} ({{ site.build_date }})
+    <footer class="site-footer">
+      <div class="container-lg">
+        <div class="footer-content">
+          <p class="footer-build">
+            <code>{{ site.git_hash | default: "dev" }}</code> 
+            <span class="footer-divider">·</span> 
+            {{ site.build_date | default: "now" | date: "%Y-%m-%d %H:%M" }}
+          </p>
+        </div>
+      </div>
     </footer>
     
     <script>

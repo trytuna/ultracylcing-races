@@ -1,0 +1,37 @@
+@use "colors" as colors;
+
+.site-footer {
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 1px solid colors.$gray-200;
+  background: colors.$gray-000;
+  
+  @media (max-width: 767px) {
+    margin-top: 40px;
+    padding: 20px 0;
+  }
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-build {
+  margin: 0;
+  font-size: 0.85em;
+  color: colors.$gray-500;
+  
+  code {
+    background: colors.$gray-100;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: colors.$gray-700;
+  }
+}
+
+.footer-divider {
+  margin: 0 8px;
+  color: colors.$gray-400;
+}
