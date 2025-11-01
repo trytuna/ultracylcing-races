@@ -12,6 +12,8 @@ $container-lg: 1012px !default;
 
 @use "normalize";
 @use "colors" as colors;
+@use "hero-banner";
+@use "accordion";
 
 // Base Styles
 body {

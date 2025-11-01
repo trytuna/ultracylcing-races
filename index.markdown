@@ -1,12 +1,7 @@
 ---
 layout: default
-plugins:
-  - date_filters
 title: Ultracycling Races
 ---
-
-You can download a 📆 Calendar (.ics) for:
-- [All ultracycling races here](all.ics)
 
 {% assign upcoming = site.data.races | upcoming_races: 12 %}
 {% if upcoming and upcoming.size > 0 %}

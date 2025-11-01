@@ -1,0 +1,99 @@
+@use "colors" as colors;
+
+.accordion {
+  background: colors.$white;
+  border: 1px solid colors.$gray-200;
+  border-radius: 8px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background: colors.$white;
+  color: colors.$gray-900;
+  padding: 16px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  border-bottom: 1px solid transparent;
+}
+
+.accordion-header:hover {
+  background: colors.$gray-100;
+}
+
+.accordion-header h2 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: colors.$gray-600;
+}
+
+.accordion-icon {
+  font-size: 1em;
+  transition: transform 0.3s;
+  color: colors.$gray-400;
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 2000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.accordion-inner {
+  padding: 30px 40px;
+}
+
+.accordion-inner h3 {
+  color: colors.$blue-500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.accordion-inner h3:first-child {
+  margin-top: 0;
+}
+
+.accordion-inner ol {
+  line-height: 1.8;
+  color: colors.$gray-600;
+}
+
+.accordion-inner li {
+  margin-bottom: 8px;
+}
+
+.accordion-inner a {
+  color: colors.$blue-500;
+  text-decoration: none;
+}
+
+.accordion-inner a:hover {
+  text-decoration: underline;
+}
+
+.platform-icon {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.tip-box {
+  background: colors.$blue-000;
+  border-left: 4px solid colors.$blue-500;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
