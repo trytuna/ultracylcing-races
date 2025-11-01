@@ -163,3 +163,69 @@
   finish-location: 🇪🇸 Spain, Córdoba
   support-mode: unsupported
   route: free
+
+- name: RAF Race Across France
+  link: https://www.raceacrossseries.com/race-across-france-2025
+  start: "2026-06-18"
+  end: "2026-06-28"
+  distance: 2500km
+  elevation: 28000m
+  start-location: 🇫🇷 France, Handeye
+  finish-location: 🇫🇷 France, Mandelieu-la-Napoule
+  support-mode: semi-supported
+  route: fixed
+
+- name: Race Across Portugal
+  link: https://www.raceacrossseries.com/race-across-portugal-2026
+  start: "2026-03-25"
+  end: "2026-03-29"
+  distance: 1000km
+  start-location: 🇵🇹 Portugal, Vila do Conde
+  support-mode: semi-supported
+  route: fixed
+  time-limit: 96h
+
+- name: Race Across Benelux
+  link: https://www.raceacrossseries.com/race-across-belgique-2025
+  start: "2026-05-27"
+  end: "2026-05-31"
+  distance: 1000km
+  support-mode: semi-supported
+  route: fixed
+  time-limit: 96h
+
+- name: GRAAALP Grevel Accross Alps
+  link: https://www.raceacrossseries.com/graaalps-2026
+  start: "2026-07-14"
+  end: "2026-07-19"
+  distance: 1200km
+  support-mode: semi-supported
+  route: fixed
+  time-limit: 120h
+
+- name: Race Accross Switzerland
+  link: https://www.raceacrossseries.com/race-across-suisse-2025
+  start: "2026-07-22"
+  end: "2026-07-26"
+  distance: 1000km
+  support-mode: semi-supported
+  route: fixed
+  time-limit: 96h
+
+- name: Race Accross Québec
+  link: https://www.raceacrossseries.com/race-across-quebec-2025
+  start: "2026-08-13"
+  end: "2026-08-23"
+  distance: 2500km
+  support-mode: semi-supported
+  route: fixed
+  time-limit: 240h
+
+- name: RAS Race Accross Spain
+  link: https://www.raceacrossseries.com/race-across-spain-2025
+  start: "2026-09-16"
+  end: "2026-09-20"
+  distance: 1000km
+  support-mode: semi-supported
+  route: fixed
+  time-limit: 96h
