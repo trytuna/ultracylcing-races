@@ -80,9 +80,19 @@ a {
   padding-left: $spacer-3 !important;
 }
 
+.mx-3 {
+  margin-left: $spacer-3 !important;
+  margin-right: $spacer-3 !important;
+}
+
 .my-5 {
   margin-top: $spacer-5 !important;
   margin-bottom: $spacer-5 !important;
+}
+
+.mx-5 {
+  margin-left: $spacer-5 !important;
+  margin-right: $spacer-5 !important;
 }
 
 .mt-5 {
