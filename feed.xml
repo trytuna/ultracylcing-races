@@ -1,0 +1,52 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ultracycling races</title>
+    <description>Ultra-distance bikepacking races for endurance cyclists</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    
+    {% assign sorted_races = site.data.races | sort: 'start' | reverse %}
+    {% for race in sorted_races limit:50 %}
+      {% if race.start %}
+        <item>
+          <title>{{ race.name | xml_escape }}</title>
+          <description>
+            <![CDATA[
+              <p><strong>Date:</strong> 
+                {{ race.start | date: "%d.%m.%Y" }}
+                {% if race.end and race.end != race.start %}
+                  - {{ race.end | date: "%d.%m.%Y" }}
+                {% endif %}
+              </p>
+              <p><strong>Distance:</strong> {{ race.distance | default: "NA" }}</p>
+              <p><strong>Elevation:</strong> {{ race.elevation | default: "NA" }}</p>
+              <p><strong>Start Location:</strong> {{ race.start-location | default: "TBA" }}</p>
+              {% if race.finish-location %}
+                <p><strong>Finish Location:</strong> {{ race.finish-location }}</p>
+              {% endif %}
+              <p><strong>Support Mode:</strong> {{ race.support-mode | capitalize }}</p>
+              <p><strong>Route:</strong> {{ race.route | capitalize }}</p>
+              {% if race.time-limit %}
+                <p><strong>Time Limit:</strong> {{ race.time-limit }}</p>
+              {% endif %}
+            ]]>
+          </description>
+          {% if race.link %}
+            <link>{{ race.link }}</link>
+            <guid isPermaLink="false">{{ race.link }}</guid>
+          {% else %}
+            <guid isPermaLink="false">{{ site.url }}/#{{ race.name | slugify }}</guid>
+          {% endif %}
+          <pubDate>{{ race.start | date_to_rfc822 }}</pubDate>
+        </item>
+      {% endif %}
+    {% endfor %}
+  </channel>
+</rss>
