@@ -1,7 +1,8 @@
 - name: North Cape 4000
   link: https://northcape4000.com
   start: "2026-07-25"
-  start-location: 🇩🇪 Berlin
+  start-location: 🇮🇹 Italy, Rovereto
+  finish-location: 🇳🇴 Norway, North Cape
   distance: 4000km
   support-mode: unsupported
   route: fixed
