@@ -54,11 +54,11 @@
 }
 
 .hero-banner li {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .hero-banner a.download-link {
-  display: inline-block;
+  display: block;
   background: colors.$white;
   color: colors.$blue-500;
   padding: 12px 24px;
@@ -75,31 +75,37 @@
 }
 
 .url-copy-box {
-  background: rgba(255, 255, 255, 0.15);
+  background: colors.$white;
   border-radius: 8px;
-  padding: 15px;
-  margin-top: 10px;
+  padding: 12px 15px;
+  margin-top: 0;
   display: flex;
   align-items: center;
   gap: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.url-copy-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .url-input {
   flex: 1;
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
   border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
+  padding: 0;
   font-family: monospace;
   font-size: 0.9em;
-  color: #333;
+  color: colors.$gray-700;
 }
 
 .copy-btn {
-  background: rgba(255, 255, 255, 0.3);
-  border: 2px solid colors.$white;
+  background: colors.$blue-500;
+  border: none;
   color: colors.$white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
@@ -108,8 +114,7 @@
 }
 
 .copy-btn:hover {
-  background: colors.$white;
-  color: colors.$blue-500;
+  background: colors.$blue-600;
 }
 
 .copy-btn.copied {

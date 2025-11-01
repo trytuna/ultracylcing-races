@@ -1,0 +1,51 @@
+
+.race-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  
+  thead {
+    background: colors.$blue-600;
+    color: colors.$white;
+    
+    th {
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: $font-weight-bold;
+    }
+  }
+  
+  tbody {
+    tr {
+      border-bottom: 1px solid colors.$gray-200;
+      
+      &:hover {
+        background-color: colors.$gray-000;
+      }
+      
+      &.cancelled {
+        opacity: 0.6;
+        background-color: #ffebee;        
+        text-decoration: line-through;
+      }
+      
+      &:nth-child(2n) {
+        background-color: colors.$gray-100;
+      }
+    }
+    
+    td {
+      padding: 12px 15px;
+    }
+  }
+  
+  a {
+    color: colors.$blue-500;
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

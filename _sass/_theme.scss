@@ -14,6 +14,7 @@ $container-lg: 1012px !default;
 @use "colors" as colors;
 @use "hero-banner";
 @use "accordion";
+@use "race-table";
 
 // Base Styles
 body {
@@ -106,76 +107,4 @@ a {
 
 .text-gray {
   color: colors.$gray-500 !important;
-}
-
-// Table Styles (deine Hauptkomponente!)
-.race-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  
-  thead {
-    background: colors.$blue-600;
-    color: colors.$white;
-    
-    th {
-      padding: 12px 15px;
-      text-align: left;
-      font-weight: $font-weight-bold;
-    }
-  }
-  
-  tbody {
-    tr {
-      border-bottom: 1px solid colors.$gray-200;
-      
-      &:hover {
-        background-color: colors.$gray-000;
-      }
-      
-      &.cancelled {
-        opacity: 0.6;
-        background-color: #ffebee;        
-        text-decoration: line-through;
-      }
-      
-      &:nth-child(2n) {
-        background-color: colors.$gray-100;
-      }
-    }
-    
-    td {
-      padding: 12px 15px;
-    }
-  }
-  
-  a {
-    color: colors.$blue-500;
-    text-decoration: none;
-    font-weight: 500;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-// Badge Styles
-.badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 0.85em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.badge-active {
-  background: colors.$green-500;
-  color: colors.$white;
-}
-
-.badge-cancelled {
-  background: colors.$red-500;
-  color: colors.$white;
 }
