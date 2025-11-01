@@ -6,18 +6,36 @@ module Jekyll
       @logger ||= Logger.new(STDOUT, level: Logger::DEBUG)
     end
 
+    def parse_date_safe(date_string)
+      return nil if date_string.nil? || date_string.empty?
+      
+      begin
+        Date.parse(date_string)
+      rescue ArgumentError, TypeError
+        nil
+      end
+    end
+
     def upcoming_races(races, months = 3)
       Jekyll::RaceFilters.logger.info "upcoming_races filter called with #{races&.length} races"
 
       today = Date.today
       future = today >> months
       
-      races.select do |race|
+      races_with_dates = races.select do |race|
         next unless race['start']
-          
-        race_date = Date.parse(race['start'])
+        
+        race_date = parse_date_safe(race['start'])
+        next unless race_date
+        
         race_date >= today && race_date <= future
-      end.sort_by { |race| Date.parse(race['start']) }
+      end.sort_by { |race| parse_date_safe(race['start']) }
+      
+      races_without_dates = races.select do |race|
+        race['start'] && parse_date_safe(race['start']).nil?
+      end
+      
+      races_with_dates + races_without_dates
     end
     
     def past_races(races)
@@ -27,9 +45,12 @@ module Jekyll
       
       races.select do |race|
         next unless race['start']
-        race_date = Date.parse(race['start'])
+        
+        race_date = parse_date_safe(race['start'])
+        next unless race_date
+        
         race_date < today
-      end.sort_by { |race| Date.parse(race['start']) }.reverse
+      end.sort_by { |race| parse_date_safe(race['start']) }.reverse
     end
   end
 end
