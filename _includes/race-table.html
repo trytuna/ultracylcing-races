@@ -1,0 +1,33 @@
+<table class="race-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Start location</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for race in include.races %}
+    <tr{% if race.cancelled %} class="cancelled"{% endif %}>
+      <td class="race-name">
+        {% if race.link %}
+          <a href="{{ race.link }}" target="_blank" rel="noopener">{{ race.name }}</a>
+        {% else %}
+          {{ race.name }}
+        {% endif %}
+      </td>
+      <td class="date">
+        {% if race.start %}
+          {{ race.start | date: "%d.%m.%Y" }}
+          {% if race.end and race.end != race.start %}
+            - {{ race.end | date: "%d.%m.%Y" }}
+          {% endif %}
+        {% else %}
+          TBA
+        {% endif %}
+      </td>
+      <td class="start-location">{{ race.start-location | default: "TBA" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,6 +1,6 @@
 - name: North Cape 4000
   link: https://northcape4000.com
-  start: 2026-07-25
+  start: "2026-07-25"
   start-location: 🇩🇪 Berlin
   distance: 4000km
   support-mode: unsupported
@@ -8,10 +8,11 @@
 
 - name: Peaks & Plains
   link: https://peaksandplains.cc
-  start: 2026-05-29
-  end: 2026-05-31
+  start: "2026-05-29"
+  end: "2026-05-31"
   start-location: 🇩🇪 Magdeburg
   distance: 555km
   elevation: 7400m
   support-mode: unsupported
   route: fixed
+  cancelled: true
