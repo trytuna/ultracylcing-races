@@ -124,3 +124,12 @@
   finish-location: 🇩🇪 Germany, Diedesfeld
   support-mode: unsupported
   route: fixed
+
+- name: TCR The Transcontinental Race
+  link: https://www.lostdot.cc/tcr
+  start: "TBA"
+  end: "TBA"
+  distance: 4000km
+  start-location: 🇪🇸 Spain, Santiago de compostela
+  finish-location: 🇷🇴 Romania, Constanta
+  support-mode: unsupported
