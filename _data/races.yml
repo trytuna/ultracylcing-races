@@ -128,8 +128,28 @@
 - name: TCR The Transcontinental Race
   link: https://www.lostdot.cc/tcr
   start: "TBA"
-  end: "TBA"
   distance: 4000km
   start-location: 🇪🇸 Spain, Santiago de compostela
   finish-location: 🇷🇴 Romania, Constanta
   support-mode: unsupported
+  router: free
+
+- name: TPR The Trans Pyrenees Race
+  link: https://www.lostdot.cc/tpr
+  start: "2025-10-03"
+  distance: 2000km
+  elevation: 40000m
+  start-location: 🇪🇸 Spain, Donostia-San Sebastián
+  finish-location: 🇪🇸 Spain, Donostia-San Sebastián
+  support-mode: unsupported
+  route: free
+
+- name: TAR The Accursed Race
+  link: https://www.lostdot.cc/tar
+  start: "2025-05-13"
+  distance: 1600km
+  elevation: 37000m
+  start-location: 🇦🇱 Albania, Shkodër
+  finish-location: 🇦🇱 Albania, Shkodër
+  support-mode: unsupported
+  route: fixed
