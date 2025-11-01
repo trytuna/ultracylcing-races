@@ -4,13 +4,15 @@
   background: linear-gradient(135deg, colors.$blue-400 0%, colors.$purple-500 100%);
   border-radius: 0;
   padding: 40px 20px;
+  padding-top: max(40px, env(safe-area-inset-top));
   color: colors.$white;
   box-shadow: none;
   position: relative;
   overflow: hidden;
   margin-top: 0;
+  margin-top: calc(-1 * env(safe-area-inset-top, 0px));
   
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     border-radius: 16px;
     padding: 60px 40px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
