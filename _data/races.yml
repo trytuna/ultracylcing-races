@@ -251,3 +251,13 @@
   elevation: 16000m
   support-mode: unsupported
   route: fixed
+
+- name: The Traka
+  link: https://www.thetraka.com/track-360/
+  start: "2026-05-01"
+  end: "2026-05-02"
+  start-location: 🇪🇸 Spain, Parc de les
+  distance: 335km
+  elevation: 4000m
+  support-mode: unsupported
+  route: fixed
