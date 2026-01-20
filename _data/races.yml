@@ -259,5 +259,21 @@
   start-location: 🇪🇸 Spain, Parc de les
   distance: 335km
   elevation: 4000m
+
+- name: Alps Divide Ultra
+  link: https://alpsdivide.com/ultra/
+  start: '2026-09-05'
+  start-location: 🇫🇷 France, Menton
+  distance: 1050km
+  elevation: 32000m
+  support-mode: unsupported
+  route: fixed
+
+- name: Alps Divide Rally
+  link: https://alpsdivide.com/rally/
+  start: '2026-07-06'
+  start-location: 🇫🇷 France, Menton
+  distance: 1050km
+  elevation: 32000m
   support-mode: unsupported
   route: fixed
