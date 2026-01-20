@@ -297,3 +297,58 @@
   elevation: 14000m
   support-mode: unsupported
   route: free
+
+- name: RATN Race Across The Netherlands (classic full loop)
+  link: https://www.adventurebikeracing.com/ratn/
+  start: '2026-05-02'
+  end: '2026-05-10'
+  start-location: 🇳🇱 Netherlands, Amerongen
+  end-location: 🇳🇱 Netherlands, Amerongen
+  distance: 1950km
+  elevation: 7000m
+  support-mode: unsupported
+  route: fixed
+
+- name: RATN Race Across The Netherlands (north loop)
+  link: https://www.adventurebikeracing.com/ratn/
+  start: '2026-05-02'
+  end: '2026-05-10'
+  start-location: 🇳🇱 Netherlands, Amerongen
+  end-location: 🇳🇱 Netherlands, Amerongen
+  distance: 1315km
+  elevation: 800m
+  support-mode: unsupported
+  route: fixed
+
+- name: RATN Race Around The Netherlands GX (full route)
+  link: https://www.adventurebikeracing.com/ratngx/
+  start: '2027-06-12'
+  end: '2027-06-21'
+  start-location: 🇳🇱 Netherlands, Amerongen
+  end-location: 🇳🇱 Netherlands, Amerongen
+  distance: 1932km
+  elevation: TBA
+  support-mode: unsupported
+  route: fixed
+
+- name: RATN Race Around The Netherlands GX (north loop route)
+  link: https://www.adventurebikeracing.com/ratngx/
+  start: '2027-06-12'
+  end: '2027-06-21'
+  start-location: 🇳🇱 Netherlands, Amerongen
+  end-location: 🇳🇱 Netherlands, Amerongen
+  distance: 1230km
+  elevation: TBA
+  support-mode: unsupported
+  route: fixed
+
+- name: RATN Race Around The Netherlands GX (south loop route)
+  link: https://www.adventurebikeracing.com/ratngx/
+  start: '2027-06-12'
+  end: '2027-06-21'
+  start-location: 🇳🇱 Netherlands, Amerongen
+  end-location: 🇳🇱 Netherlands, Amerongen
+  distance: TBA
+  elevation: TBA
+  support-mode: unsupported
+  route: fixed
