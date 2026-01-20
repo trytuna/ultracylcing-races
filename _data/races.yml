@@ -277,3 +277,23 @@
   elevation: 32000m
   support-mode: unsupported
   route: fixed
+
+- name: Utrecht Ultra
+  link: https://utrechtultra.com/utrechtultra/
+  start: '2026-05-23'
+  end: '2026-05-27'
+  start-location: 🇳🇱 Netherlands, Utrecht
+  distance: 1000km
+  elevation: 6000m
+  support-mode: unsupported
+  route: free
+
+- name: Utrecht Ultra XL
+  link: https://utrechtultra.com/utrechtultraxl/
+  start: '2026-08-01'
+  end: '2026-08-07'
+  start-location: 🇳🇱 Netherlands, Utrecht
+  distance: 1600km
+  elevation: 14000m
+  support-mode: unsupported
+  route: free
