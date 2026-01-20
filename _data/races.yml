@@ -352,3 +352,14 @@
   elevation: TBA
   support-mode: unsupported
   route: fixed
+
+- name: Öztaler Radmarathon
+  link: https://www.soelden.com/de/veranstaltungen-freizeittipps/events/oetztaler-radmarathon
+  start: '2026-08-30'
+  end: '2026-08-30'
+  start-location: 🇦🇹 Austria, Sölden
+  end-location: 🇦🇹 Austria, Sölden
+  distance: 227km
+  elevation: 5500m
+  support-mode: supported
+  route: fixed
