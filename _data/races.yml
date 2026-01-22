@@ -363,3 +363,36 @@
   elevation: 5500m
   support-mode: supported
   route: fixed
+
+- name: Gravel Birds L'Abetarda
+  link: https://www.gravelbirds.cc
+  start: '2026-05-09'
+  end: '2026-05-15'
+  start-location: 🇵🇹 Portugal, Alentejo
+  end-location: 🇵🇹 Portugal, Alentejo
+  distance: 350km
+  elevation: 5000m
+  support-mode: supported
+  route: fixed
+
+- name: Gravel Birds Classic 750
+  link: https://www.gravelbirds.cc
+  start: '2026-05-09'
+  end: '2026-05-15'
+  start-location: 🇵🇹 Portugal, Alentejo
+  end-location: 🇵🇹 Portugal, Alentejo
+  distance: 750km
+  elevation: 11000m
+  support-mode: supported
+  route: fixed
+
+- name: Gravel Birds XL 1000
+  link: https://www.gravelbirds.cc
+  start: '2026-05-09'
+  end: '2026-05-15'
+  start-location: 🇵🇹 Portugal, Alentejo
+  end-location: 🇵🇹 Portugal, Alentejo
+  distance: 1000km
+  elevation: 15000m
+  support-mode: supported
+  route: fixed
