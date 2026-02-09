@@ -46,11 +46,15 @@ module Jekyll
       races.select do |race|
         next unless race['start']
         
-        race_date = parse_date_safe(race['start'])
+        date_field = race['end'] || race['start']
+        race_date = parse_date_safe(date_field)
         next unless race_date
         
         race_date < today
-      end.sort_by { |race| parse_date_safe(race['start']) }.reverse
+      end.sort_by do |race|
+        date_field = race['end'] || race['start']
+        parse_date_safe(date_field)
+      end.reverse
     end
   end
 end
