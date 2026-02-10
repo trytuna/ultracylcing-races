@@ -25,10 +25,13 @@ module Jekyll
       races_with_dates = races.select do |race|
         next unless race['start']
         
-        race_date = parse_date_safe(race['start'])
-        next unless race_date
+        start_date = parse_date_safe(race['start'])
+        next unless start_date
         
-        race_date >= today && race_date <= future
+        end_date = race['end'] ? parse_date_safe(race['end']) : start_date
+        next unless end_date
+        
+        end_date >= today && start_date <= future
       end.sort_by { |race| parse_date_safe(race['start']) }
       
       races_without_dates = races.select do |race|
