@@ -181,6 +181,7 @@
   start: "2026-03-25"
   end: "2026-03-29"
   distance: 1000km
+  elevation: 12500m
   start-location: 🇵🇹 Portugal, Vila do Conde
   support-mode: semi-supported
   route: fixed
