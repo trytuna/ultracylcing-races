@@ -397,3 +397,23 @@
   elevation: 15000m
   support-mode: supported
   route: fixed
+
+- name: Istra Land 2026
+  link: https://www.istraland.cc
+  start: '2026-09-18'
+  end: '2026-09-21'
+  start-location: 🇮🇹 Italy, Basovizza
+  distance: 400km
+  elevation: 5000m
+  support-mode: unsupported
+  route: fixed
+
+- name: Istra Half 2026
+  link: https://www.istraland.cc
+  start: '2026-09-20'
+  end: '2026-09-21'
+  start-location: 🇮🇹 Italy, Basovizza
+  distance: 200km
+  elevation: 3500m
+  support-mode: unsupported
+  route: fixed
