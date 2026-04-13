@@ -417,3 +417,43 @@
   elevation: 3500m
   support-mode: unsupported
   route: fixed
+
+- name: Veneto Gravel (classic)
+  link: https://venetogravel.it/en/edizione2026/
+  start: '2026-04-17'
+  end: '2026-04-22'
+  start-location: 🇮🇹 Italy, Bassano del Grappa
+  distance: 720km
+  elevation: 4300m
+  supported-mode: unsupported
+  route: fixed
+
+- name: Veneto Gravel (short beach)
+  link: https://venetogravel.it/en/edizione2026/
+  start: '2026-04-17'
+  end: '2026-04-22'
+  start-location: 🇮🇹 Italy, Bassano del Grappa
+  distance: 400km
+  elevation: 2800m
+  supported-mode: unsupported
+  route: fixed
+
+- name: Veneto Gravel (short lake)
+  link: https://venetogravel.it/en/edizione2026/
+  start: '2026-04-17'
+  end: '2026-04-22'
+  start-location: 🇮🇹 Italy, Bassano del Grappa
+  distance: 400km
+  elevation: 1800m
+  supported-mode: unsupported
+  route: fixed
+
+- name: Veneto Gravel (newbie)
+  link: https://venetogravel.it/en/edizione2026/
+  start: '2026-04-17'
+  end: '2026-04-22'
+  start-location: 🇮🇹 Italy, Bassano del Grappa
+  distance: 200km
+  elevation: 2800m
+  supported-mode: unsupported
+  route: fixed
