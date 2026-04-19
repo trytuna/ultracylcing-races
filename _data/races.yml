@@ -457,3 +457,30 @@
   elevation: 2800m
   supported-mode: unsupported
   route: fixed
+
+- name: Gravallo (supercore)
+  link: https://www.gravallo.bike
+  start: '2026-06-11'
+  start-location: 🇦🇹 Austria, Linz
+  distance: 307km
+  elevation: 4940hm
+  supported-mode: unsupported
+  route: fixed
+
+- name: Gravallo (fondo)
+  link: https://www.gravallo.bike
+  start: '2026-06-13'
+  start-location: 🇦🇹 Austria, Linz
+  distance: 106km
+  elevation: 1880hm
+  supported-mode: unsupported
+  route: fixed
+
+- name: Gravallo (core)
+  link: https://www.gravallo.bike
+  start: '2026-06-13'
+  start-location: 🇦🇹 Austria, Linz
+  distance: 70km
+  elevation: 1270hm
+  supported-mode: unsupported
+  route: fixed
