@@ -126,12 +126,13 @@
   support-mode: unsupported
   route: fixed
 
-- name: TCR The Transcontinental Race
+- name: TCR The Transcontinental Race #12
   link: https://www.lostdot.cc/tcr
-  start: "TBA"
+  start: "2026-07-19"
+  end: "2026-08-08"
   distance: 4000km
-  start-location: 🇪🇸 Spain, Santiago de Compostela
-  finish-location: 🇷🇴 Romania, Constanta
+  start-location: 🇳🇴 Norway, Trondheim
+  finish-location: 🇬🇷 Greece, Kalamata
   support-mode: unsupported
   router: free
 
